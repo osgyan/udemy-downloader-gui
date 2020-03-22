@@ -21,6 +21,21 @@
     },
     "linux": {
       "category": "Utility"
+      "target": ["snap"]
+    }
+    
+    "snap": {
+      "confinement": "strict",
+      "plugs": [
+        "default",
+        "nodejs"
+      ],
+      "stagePackages": [
+        "default"
+      ],
+      "publish": [
+        "github"
+      ]
     }
   },
   "author": {
